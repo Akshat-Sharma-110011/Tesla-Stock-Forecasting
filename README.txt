@@ -17,7 +17,7 @@ The app allows users to explore Tesla's historical stock data, analyze trends, a
 
 1. Clone the repository or download the project files.
    ```bash
-   git clone https://github.com/your-repo/tesla-stock-forecasting.git
+   git clone https://github.com/Akshat-Sharma-110011/Tesla-Stock-Forecasting
    cd tesla-stock-forecasting
    ```
 
