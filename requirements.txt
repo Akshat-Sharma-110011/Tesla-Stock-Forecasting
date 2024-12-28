@@ -1,0 +1,5 @@
+prophet
+pandas
+plotly
+streamlit
+matplotlib
