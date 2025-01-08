@@ -1,74 +1,104 @@
 
-# Tesla Stock Forecasting
+# Tesla Stock Forecasting  
 
-Tesla Stock Forecasting is a Streamlit-based web application that uses the Prophet library for time series forecasting. 
-The app allows users to explore Tesla's historical stock data, analyze trends, and predict future stock performance.
+Tesla Stock Forecasting is an interactive web application built with Streamlit, enabling users to analyze and forecast Tesla's stock performance. The app uses the Prophet library for time series forecasting and offers dynamic visualizations through Plotly.  
 
-## Features
+## Features  
 
-- **Data Exploration**: Visualize Tesla stock prices and derived metrics like price range and price change.
-- **Custom Forecasting**: Select any stock column (e.g., Open, High, Low, Close, Volume) for forecasting.
-- **Dynamic Forecast Period**: Choose the forecast duration (e.g., weekly, monthly, yearly) with customizable periods.
-- **Cumulative Growth Analysis**: Analyze weekly, monthly, and yearly cumulative growth based on forecasts.
-- **Dark and Light Modes**: Switch between themes for a better user experience.
-- **Interactive Visualizations**: Includes dynamic charts for forecast trends and confidence intervals.
+### **Interactive Data Exploration**  
+- Visualize Tesla's historical stock data, including derived metrics like **Price Range** (High - Low) and **Price Change** (Close - Open).  
+- Access interactive charts to better understand trends and historical patterns.  
 
-## Installation
+### **Custom Forecasting**  
+- Choose any stock column (e.g., Open, High, Low, Close, Volume) for detailed forecasting.  
+- Forecast for customizable timeframes: weekly, monthly, yearly.  
 
-1. Clone the repository or download the project files.
-   ```bash
-   git clone https://github.com/Akshat-Sharma-110011/Tesla-Stock-Forecasting
-   cd tesla-stock-forecasting
-   ```
+### **Dynamic Growth Analysis**  
+- Analyze cumulative growth for weekly, monthly, or yearly trends.  
+- Specify a custom date to view detailed growth metrics.  
 
-2. Install the required Python packages using pip:
-   ```bash
-   pip install -r requirements.txt
-   ```
+### **User-Centric Design**  
+- Toggle between **Dark Mode** and **Light Mode** for a personalized experience.  
+- Sidebar-based controls for seamless configuration.  
 
-3. Run the Streamlit app:
-   ```bash
-   streamlit run app.py
-   ```
+### **Advanced Visualizations**  
+- Plot forecasted values, confidence intervals, and growth metrics using **Plotly**.  
+- Interactive charts with hover capabilities to enhance data comprehension.  
 
-## Usage
+## Installation  
 
-1. Upload the Tesla stock data CSV (`TESLA.csv`) to the application.
-2. Use the sidebar to configure your forecast settings:
-   - Choose the column to forecast (e.g., Open, Close, Volume).
-   - Select the forecast period and the number of days to predict.
-   - Pick a specific date for detailed growth analysis.
-3. View the forecast results, including confidence intervals, growth metrics, and cumulative trends.
+### Prerequisites  
+Ensure Python 3.8+ is installed on your system.  
 
-## Technical Details
+1. **Clone the repository**:  
+   ```bash  
+   git clone https://github.com/Akshat-Sharma-110011/Tesla-Stock-Forecasting  
+   cd tesla-stock-forecasting  
+   ```  
 
-- **Libraries Used**:
-  - `Prophet`: For time series forecasting.
-  - `Plotly`: For interactive data visualizations.
-  - `Pandas`: For data manipulation and preprocessing.
-  - `Streamlit`: For creating the web application.
+2. **Install dependencies**:  
+   ```bash  
+   pip install -r requirements.txt  
+   ```  
 
-- **Data Preprocessing**:
-  - Derived metrics: Price range (High - Low) and price change (Close - Open).
-  - Converted dates to the required format for Prophet.
+3. **Run the application**:  
+   ```bash  
+   streamlit run app.py  
+   ```  
 
-- **Forecasting**:
-  - Weekly, monthly, and yearly seasonality enabled in Prophet.
-  - Cumulative growth calculations for trend, weekly, and yearly components.
+## Usage  
 
-## Notes
+1. **Upload Tesla Stock Data**  
+   - Prepare a Tesla stock dataset (e.g., `TESLA.csv`) with the necessary columns: Date, Open, High, Low, Close, Volume, etc.  
 
-- The application assumes the presence of a properly formatted Tesla stock dataset (`TESLA.csv`).
-- Prophet requires a compatible environment setup. Ensure to use a virtual environment if issues arise during installation.
+2. **Configure Forecast Settings**  
+   - Select the column for forecasting: Open, High, Low, Close, Volume, or derived metrics (Price Range, Price Change).  
+   - Choose a forecast period (e.g., Weekly, Monthly, Yearly).  
+   - Define the forecast duration (e.g., 1000 days).  
+   - Specify a date for cumulative growth analysis.  
 
-## Contributing
+3. **View Results**  
+   - Explore interactive charts showing forecasted values, confidence intervals, and growth metrics.  
+   - Analyze detailed growth for your selected period (weekly, monthly, or yearly).  
 
-Contributions are welcome! Please fork the repository and submit a pull request for any improvements.
+## Technical Details  
 
-## License
+### **Libraries and Tools**  
+- **Prophet**: Time series forecasting with customizable seasonality.  
+- **Pandas**: Data manipulation and preprocessing.  
+- **Plotly**: Interactive visualizations for charts and trends.  
+- **Streamlit**: Web application framework for data visualization.  
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+### **Data Preparation**  
+- Derives metrics:  
+  - **Price Range**: High - Low.  
+  - **Price Change**: Close - Open.  
+- Ensures proper formatting of date fields for compatibility with Prophet.  
+
+### **Forecasting Approach**  
+- Utilizes Prophet for forecasting with weekly and yearly seasonality enabled.  
+- Calculates cumulative growth trends for weekly, monthly, and yearly components.  
+
+### **UI Enhancements**  
+- Custom styling for both dark and light themes using Streamlit's HTML injection.  
+- Interactive sidebar controls for theme selection, forecasting period, and analysis parameters.  
+
+## Notes  
+
+- Ensure the Tesla stock dataset (`TESLA.csv`) is correctly formatted before using the application.  
+- Use a virtual environment to avoid dependency conflicts while installing required packages.  
+
+## Contribution  
+
+We welcome contributions to improve the application. Follow these steps:  
+1. Fork the repository.  
+2. Create a feature branch.  
+3. Submit a pull request with your changes.  
+
+## License  
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.  
 
 ---
 
-For any queries, contact [your-email@example.com].
+For questions or support, contact [akshatsharma.work.1310@gmail.com].  
